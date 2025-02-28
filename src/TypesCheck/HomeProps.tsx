@@ -1,4 +1,6 @@
 export interface ProductListParams {
+    category: any;
+    isFeatured?: boolean;
     _id: string;
     images: [string];
     name: string;
@@ -17,3 +19,4 @@ export interface FetchProductsParam {
         results: ProductListParams[]
     }
 }
+
